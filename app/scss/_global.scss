@@ -26,6 +26,9 @@ a {
     color: #c08e71;
   }
 }
+input {
+  display: inline-block;
+}
 p,
 body,
 div,
@@ -45,7 +48,7 @@ button {
 }
 
 .clearfix::after {
-  content: '';
+  content: "";
   display: table;
   clear: both;
 }
