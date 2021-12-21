@@ -29,7 +29,9 @@ gulp.task("style", function () {
     .src([
       "node_modules/normalize.css/normalize.css",
       "node_modules/bootstrap/dist/css/bootstrap.css",
-      "node_modules/@splidejs/splide/dist/css/splide.min.css"
+      "node_modules/@splidejs/splide/dist/css/splide.min.css",
+      "bower_components/jquery.form-styler/dist/jquery.formstyler.css",
+      "bower_components/jquery.form-styler/dist/jquery.formstyler.theme.css",
     ])
     .pipe(concat("libs.min.css"))
     .pipe(cssmin())
@@ -40,6 +42,7 @@ gulp.task("script", function () {
     .src([
       "node_modules/bootstrap/dist/js/bootstrap.js",
       "node_modules/@splidejs/splide/dist/js/splide.js",
+      "bower_components/jquery.form-styler/dist/jquery.formstyler.js",
     ])
     .pipe(concat("libs.min.js"))
     .pipe(uglify())
